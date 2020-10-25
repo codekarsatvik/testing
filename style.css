@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+  touch-action: manipulation;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  touch-action: manipulation;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.score {
+  background: rgba(255,255,255,0.2);
+  padding: 0 3rem;
+  line-height: 1;
+  border-radius: 1rem;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+
+  background-size: contain;
+  content: '';
+  width: 80%;
+  height:50px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+  padding: 10px;
+
+}
+.btn {
+  margin-left: 45%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.hole1{
+  background: url(holes/india.svg) bottom center no-repeat;
+}
+.hole2{
+  background: url(holes/japan.svg) bottom center no-repeat;
+}
+.hole3{
+  background: url(holes/south-africa.svg) bottom center no-repeat;
+}
+.hole4{
+  background: url(holes/sri-lanka.svg) bottom center no-repeat;
+}
+.hole5{
+  background: url(holes/united-kingdom.svg) bottom center no-repeat;
+}
+.hole6{
+  background: url(holes/pakistan.svg) bottom center no-repeat;
+}
+
+.mole {
+  background: url('modi.png') bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.3s;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+/*** FONTS ***/
+
+
+
+
+
+
+
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
